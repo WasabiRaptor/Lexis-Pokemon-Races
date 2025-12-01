@@ -9,8 +9,8 @@
 	"shortdescription" : "Quadruped Tungsten-Silver Boots",
 	"tooltipKind" : "armor",
 
-	"maleFrames" : "pants.png",
-	"femaleFrames" : "pants.png",
+	"maleFrames" : "",
+	"femaleFrames" : "",
 
 	"level" : 2,
 	"leveledStatusEffects" : [

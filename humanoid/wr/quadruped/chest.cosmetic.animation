@@ -1,9 +1,9 @@
 {
 	"globalTagDefaults" : {
-		"hindlegBackCosmetic<slot>Frameset" : "",
-		"hindlegBackFlippedCosmetic<slot>Frameset" : "",
-		"hindlegFrontCosmetic<slot>Frameset" : "",
-		"hindlegFrontFlippedCosmetic<slot>Frameset" : "",
+		"forelegBackCosmetic<slot>Frameset" : "",
+		"forelegBackFlippedCosmetic<slot>Frameset" : "",
+		"forelegFrontCosmetic<slot>Frameset" : "",
+		"forelegFrontFlippedCosmetic<slot>Frameset" : "",
 		"bodyCosmetic<slot>Frameset" : "",
 		"bodyFlippedCosmetic<slot>Frameset" : "",
 		"cosmetic<slot>Directives" : ""
@@ -165,7 +165,7 @@
 			"bodyCosmetic<slot>": {
 				"properties": {
 					"centered": true,
-					"zLevel": 9,
+					"zLevel": 10.0,
 					"transformationGroups": [],
 					"anchorPart": "body",
 					"processingDirectives" : "<cosmetic<slot>Directives>"
