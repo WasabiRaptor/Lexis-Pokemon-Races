@@ -148,34 +148,42 @@
 	"defaultBlueprints" : {
 		"tier1" : [
 
-// Empty Hands
+			// Empty Hands
 			{ "item" : "flaghuman" },
 
-// Anvil
-			{ "item" : "humantier1head" },
-			{ "item" : "humantier1chest" },
-			{ "item" : "humantier1pants" },
-			{ "item" : "humantier2head" },
-			{ "item" : "humantier2chest" },
-			{ "item" : "humantier2pants" },
+			// Anvil
+			{ "item" : "wr/pokemonTier1Head" },
+			{ "item" : "wr/pokemonTier1Chest" },
+			{ "item" : "wr/pokemonTier1Legs" },
+			{ "item" : "wr/pokemonTier2Head" },
+			{ "item" : "wr/pokemonTier2Chest" },
+			{ "item" : "wr/pokemonTier2Legs" },
 
 			{ "item" : "ironshortsword" },
 			{ "item" : "ironbroadsword" },
 			{ "item" : "tungstenaxe" },
 			{ "item" : "tungstenhammer" },
+			{ "item" : "ironrevolver" },
+			{ "item" : "ironassaultrifle" },
+			{ "item" : "tungstenmagnum" },
+			{ "item" : "tungstenshotgun" },
 
-// Anvil2
-			{ "item" : "humantier3head" },
-			{ "item" : "humantier3chest" },
-			{ "item" : "humantier3pants" },
-			{ "item" : "humantier4head" },
-			{ "item" : "humantier4chest" },
-			{ "item" : "humantier4pants" },
+			// Anvil2
+			{ "item" : "wr/pokemonTier3Head" },
+			{ "item" : "wr/pokemonTier3Chest" },
+			{ "item" : "wr/pokemonTier3Legs" },
+			{ "item" : "wr/pokemonTier4Head" },
+			{ "item" : "wr/pokemonTier4Chest" },
+			{ "item" : "wr/pokemonTier4Legs" },
 
 			{ "item" : "titaniumdagger" },
 			{ "item" : "titaniumspear" },
 			{ "item" : "durasteelbroadsword" },
 			{ "item" : "durasteelshortsword" },
+			{ "item" : "titaniummachinepistol" },
+			{ "item" : "titaniumsniperrifle" },
+			{ "item" : "durasteelrevolver" },
+			{ "item" : "durasteelassaultrifle" },
 
 // Anvil3
 			{ "item" : "humantier5ahead" },

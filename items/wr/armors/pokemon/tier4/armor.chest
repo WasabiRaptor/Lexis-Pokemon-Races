@@ -1,12 +1,12 @@
 {
-	"itemName" : "wr/pokemonArmorTier4Chest",
+	"itemName" : "wr/pokemonTier4Chest",
 	"price" : 4000,
 	"inventoryIcon" : "icons.png:chest",
 	"maxStack" : 1,
 	"rarity" : "Common",
 	"category" : "chestarmour",
 	"description" : "Provides some protection for your chest.",
-	"shortdescription" : "Quadruped Durasteel Chestplate",
+	"shortdescription" : "Critter Durasteel Chestplate",
 	"tooltipKind" : "armor",
 
 	"maleFrames" : {

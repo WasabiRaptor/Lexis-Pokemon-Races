@@ -1,5 +1,5 @@
 {
-  "objectName" : "flagluxio",
+  "objectName" : "wr/luxio_flag",
   "colonyTags" : ["luxio"],
   "printable" : false,
   "rarity" : "Common",
@@ -24,10 +24,10 @@
   "interactAction" : "OpenTeleportDialog",
   "interactData" : "/interface/warping/destinationonly.config",
 
-  "inventoryIcon" : "flagluxioicon.png",
+  "inventoryIcon" : "icon.png",
   "orientations" : [
     {
-      "image" : "flagluxio.png:<color>.<frame>",
+      "image" : "flag.png:<color>.<frame>",
       "flipImages" : true,
       "direction" : "left",
       "imagePosition" : [-17, 0],
@@ -38,7 +38,7 @@
       "anchors" : [ "bottom" ]
     },
     {
-      "image" : "flagluxio.png:<color>.<frame>",
+      "image" : "flag.png:<color>.<frame>",
       "direction" : "right",
       "imagePosition" : [1, 0],
       "frames" : 6,

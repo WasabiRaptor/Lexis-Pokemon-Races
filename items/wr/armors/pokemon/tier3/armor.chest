@@ -1,12 +1,12 @@
 {
-	"itemName" : "wr/pokemonArmorTier3Chest",
+	"itemName" : "wr/pokemonTier3Chest",
 	"price" : 3200,
 	"inventoryIcon" : "icons.png:chest",
 	"maxStack" : 1,
 	"rarity" : "Common",
 	"category" : "chestarmour",
 	"description" : "Provides some protection for your chest.",
-	"shortdescription" : "Quadruped Titanium-Gold Chestplate",
+	"shortdescription" : "Critter Titanium-Gold Chestplate",
 	"tooltipKind" : "armor",
 
 	"maleFrames" : {

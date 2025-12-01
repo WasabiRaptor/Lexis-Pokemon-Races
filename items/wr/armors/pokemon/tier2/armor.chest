@@ -1,12 +1,12 @@
 {
-	"itemName" : "wr/pokemonArmorTier2Chest",
+	"itemName" : "wr/pokemonTier2Chest",
 	"price" : 2400,
 	"inventoryIcon" : "icons.png:chest",
 	"maxStack" : 1,
 	"rarity" : "Common",
 	"category" : "chestarmour",
 	"description" : "Provides some protection for your chest.",
-	"shortdescription" : "Quadruped Tungsten-Silver Chestplate",
+	"shortdescription" : "Critter Tungsten-Silver Chestplate",
 	"tooltipKind" : "armor",
 
 	"maleFrames" : {

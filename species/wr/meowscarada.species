@@ -78,15 +78,15 @@
 		"tier1" : [
 
 // Empty Hands
-			{ "item" : "flaghuman" },
+			{ "item" : "wr/meowscarada_flag" },
 
 // Anvil
-			{ "item" : "humantier1head" },
-			{ "item" : "humantier1chest" },
-			{ "item" : "humantier1pants" },
-			{ "item" : "humantier2head" },
-			{ "item" : "humantier2chest" },
-			{ "item" : "humantier2pants" },
+			{ "item" : "glitchtier1head" },
+			{ "item" : "glitchtier1chest" },
+			{ "item" : "glitchtier1pants" },
+			{ "item" : "glitchtier2head" },
+			{ "item" : "glitchtier2chest" },
+			{ "item" : "glitchtier2pants" },
 
 			{ "item" : "ironshortsword" },
 			{ "item" : "ironbroadsword" },
@@ -94,12 +94,12 @@
 			{ "item" : "tungstenhammer" },
 
 // Anvil2
-			{ "item" : "humantier3head" },
-			{ "item" : "humantier3chest" },
-			{ "item" : "humantier3pants" },
-			{ "item" : "humantier4head" },
-			{ "item" : "humantier4chest" },
-			{ "item" : "humantier4pants" },
+			{ "item" : "glitchtier3head" },
+			{ "item" : "glitchtier3chest" },
+			{ "item" : "glitchtier3pants" },
+			{ "item" : "glitchtier4head" },
+			{ "item" : "glitchtier4chest" },
+			{ "item" : "glitchtier4pants" },
 
 			{ "item" : "titaniumdagger" },
 			{ "item" : "titaniumspear" },
@@ -107,26 +107,26 @@
 			{ "item" : "durasteelshortsword" },
 
 // Anvil3
-			{ "item" : "humantier5ahead" },
-			{ "item" : "humantier5achest" },
-			{ "item" : "humantier5apants" },
-			{ "item" : "humantier6ahead" },
-			{ "item" : "humantier6achest" },
-			{ "item" : "humantier6apants" },
+			{ "item" : "glitchtier5ahead" },
+			{ "item" : "glitchtier5achest" },
+			{ "item" : "glitchtier5apants" },
+			{ "item" : "glitchtier6ahead" },
+			{ "item" : "glitchtier6achest" },
+			{ "item" : "glitchtier6apants" },
 
-			{ "item" : "humantier5mhead" },
-			{ "item" : "humantier5mchest" },
-			{ "item" : "humantier5mpants" },
-			{ "item" : "humantier6mhead" },
-			{ "item" : "humantier6mchest" },
-			{ "item" : "humantier6mpants" },
+			{ "item" : "glitchtier5mhead" },
+			{ "item" : "glitchtier5mchest" },
+			{ "item" : "glitchtier5mpants" },
+			{ "item" : "glitchtier6mhead" },
+			{ "item" : "glitchtier6mchest" },
+			{ "item" : "glitchtier6mpants" },
 
-			{ "item" : "humantier5shead" },
-			{ "item" : "humantier5schest" },
-			{ "item" : "humantier5spants" },
-			{ "item" : "humantier6shead" },
-			{ "item" : "humantier6schest" },
-			{ "item" : "humantier6spants" },
+			{ "item" : "glitchtier5shead" },
+			{ "item" : "glitchtier5schest" },
+			{ "item" : "glitchtier5spants" },
+			{ "item" : "glitchtier6shead" },
+			{ "item" : "glitchtier6schest" },
+			{ "item" : "glitchtier6spants" },
 
 			{ "item" : "aegisaltpistol" },
 			{ "item" : "aegisaltbow" },
@@ -136,19 +136,19 @@
 			{ "item" : "violiumbroadsword" },
 
 // Furniture Table 2
-			{ "item" : "humanstoragelocker" },
+			{ "item" : "wr/meowscarada_boat_shiplocker" },
 			{ "item" : "wr/meowscarada_boat_shipdoor" },
 			{ "item" : "wr/meowscarada_boat_shiphatch" },
 
 // Spinning Wheel
-			{ "item" : "conceptchest" },
-			{ "item" : "conceptlegs" },
-			{ "item" : "coolchest" },
-			{ "item" : "coollegs" },
-			{ "item" : "sweatervestchest" },
-			{ "item" : "sweatervestlegs" },
-			{ "item" : "workoutchest" },
-			{ "item" : "workoutlegs" }
+			{ "item" : "craftsmenchest" },
+			{ "item" : "craftsmenlegs" },
+			{ "item" : "merchantchest" },
+			{ "item" : "merchantlegs" },
+			{ "item" : "noblechest" },
+			{ "item" : "noblelegs" },
+			{ "item" : "peasantchest" },
+			{ "item" : "peasantlegs" }
 		]
 	},
 	"altOptionAsFacialMask" : true,

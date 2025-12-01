@@ -1,12 +1,12 @@
 {
-	"itemName" : "wr/pokemonArmorTier2Head",
+	"itemName" : "wr/pokemonTier2Head",
 	"price" : 1440,
 	"inventoryIcon" : "icons.png:head",
 	"maxStack" : 1,
 	"rarity" : "Common",
 	"category" : "headarmour",
 	"description" : "Provides some protection for your head.",
-	"shortdescription" : "Quadruped Tungsten-Silver Helmet",
+	"shortdescription" : "Critter Tungsten-Silver Helmet",
 	"tooltipKind" : "armor",
 
 	"maleFrames" : "head.png",

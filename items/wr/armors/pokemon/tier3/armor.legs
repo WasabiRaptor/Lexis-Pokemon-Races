@@ -1,12 +1,12 @@
 {
-	"itemName" : "wr/pokemonArmorTier3Legs",
+	"itemName" : "wr/pokemonTier3Legs",
 	"price" : 1280,
 	"inventoryIcon" : "icons.png:pants",
 	"maxStack" : 1,
 	"rarity" : "Common",
 	"category" : "legarmour",
 	"description" : "Provides some protection for your hindlegs.",
-	"shortdescription" : "Quadruped Titanium-Gold Boots",
+	"shortdescription" : "Critter Titanium-Gold Boots",
 	"tooltipKind" : "armor",
 
 	"maleFrames" : "",
