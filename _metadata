@@ -5,6 +5,9 @@
 	"description" : "",
 	"name" : "wr_pokemon",
 	"friendlyName" : "Lexi's Pokemon Races",
+	"requires" : [
+		"wr_lib"
+	],
 	"includes" : [],
 	"scripts" : {
 		"onLoad" : ["/scripts/wr/pokemon/species_onload.lua"]
