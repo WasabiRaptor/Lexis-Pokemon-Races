@@ -2,7 +2,7 @@ local races = {
 	"wr/flareon",
 	"wr/vaporeon",
 	"wr/luxio",
-	"wr/nickit",
+	"wr/nickit_anthro",
 	"wr/meowscarada",
 	"wr/vulpix",
 	"wr/absol"

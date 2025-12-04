@@ -1,0 +1,30 @@
+require "/scripts/versioningutils.lua"
+
+local oldIdMap = {
+	["sbq/flareon"] = "wr/flareon",
+	["sbq/vaporeon"] = "wr/vaporeon",
+	["sbq/meowscarada"] = "wr/meowscarada",
+	["sbq/nickit_anthro"] = "wr/nickit_anthro"
+}
+function update(diskStore)
+	if oldIdMap[diskStore.identity.species:lower()] then
+		diskStore.identity.species = oldIdMap[diskStore.identity.species:lower()]
+	end
+	fixFollowers(diskStore.companions.crew)
+	fixFollowers(diskStore.companions.shipCrew)
+	fixFollowers(diskStore.companions.followers)
+
+
+	return diskStore
+end
+
+function fixFollowers(companions)
+	for i, companion in ipairs(companions) do
+		if oldIdMap[companion.config.species:lower()] then
+			companion.config.species = oldIdMap[companion.config.species:lower()]
+		end
+		if oldIdMap[companion.config.parameters.identity.species:lower()] then
+			companion.config.parameters.identity.species = oldIdMap[companion.config.parameters.identity.species:lower()]
+		end
+	end
+end

@@ -1,5 +1,5 @@
 {
-	"kind" : "wr/nickit",
+	"kind" : "wr/nickit_anthro",
 
 	"potionRarity" : "rare",
 	"charCreationTooltip" : {
@@ -42,7 +42,7 @@
 			"includes" : [
 				"/humanoid/opensb/humanoid.animation",
 				"/humanoid/wr/layered_emote.animation",
-				"/humanoid/wr/nickit/tail.animation"
+				"/humanoid/wr/nickit_anthro/tail.animation"
 			],
 			"animatedParts" : {
 				"stateTypes" : {},
@@ -93,12 +93,12 @@
 		{
 			"name" : "male",
 			"image" : "/interface/title/male.png",
-			"characterImage" : "/humanoid/wr/nickit/icon.png"
+			"characterImage" : "/humanoid/wr/nickit_anthro/icon.png"
 		},
 		{
 			"name" : "female",
 			"image" : "/interface/title/female.png",
-			"characterImage" : "/humanoid/wr/nickit/icon.png"
+			"characterImage" : "/humanoid/wr/nickit_anthro/icon.png"
 		}
 	],
 	"charGenTextLabels" : [
