@@ -1,5 +1,11 @@
 local animationRate = 1
+local old = {
+	update = update or function () end,
+	die = die or function () end
+}
+
 function update(dt)
+	old.update(dt)
 	local phase = world.warpPhase()
 	local flying = world.flyingType()
 	if flying == "none" then

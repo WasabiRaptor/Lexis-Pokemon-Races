@@ -1,5 +1,10 @@
+local old = {
+	update = update or function () end,
+	die = die or function () end
+}
 local inited = false
-function update()
+function update(dt)
+	old.update(dt)
 	if inited then return end
 	local objectList = config.getParameter("placeObjects")
 	local placed = config.getParameter("placedObjects") or {}
@@ -19,10 +24,10 @@ function update()
 	end
 	object.setConfigParameter("placedObjects", placed)
 	inited = true
-	script.setUpdateDelta(0)
 end
 
 function die()
+	old.die()
 	local objectList = config.getParameter("placeObjects")
 	local placed = config.getParameter("placedObjects") or {}
 	for i, v in ipairs(objectList) do
