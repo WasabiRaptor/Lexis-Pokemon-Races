@@ -51,6 +51,7 @@
         "poly",
         "tenant",
         "Item",
-        "assets"
+        "assets",
+        "uninit"
     ]
 }
