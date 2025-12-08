@@ -1,12 +1,14 @@
 local races = {
-	"wr/flareon",
+	"wr/vulpix",
 	"wr/vaporeon",
+	-- "wr/jolteon",
+	"wr/flareon",
+	"wr/absol",
 	"wr/luxio",
+	"wr/nickit",
 	"wr/nickit_anthro",
 	"wr/meowscarada",
-	"wr/vulpix",
-	"wr/absol",
-	"wr/nickit"
+
 }
 local charcreation_patch = {}
 local universe_server_patch = {}
