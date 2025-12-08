@@ -27,31 +27,127 @@
 		"forelegFrontCosmetic<slot>Frameset" : "<directory>legs/forelegFront.png",
 		"forelegFrontFlippedCosmetic<slot>Frameset" : "<directory>legs/forelegFront.png"
 	},
+	"colorShortDescriptions" : [
+		"Pride Arm Socks",
+		"Agender Arm Socks", // Black
+		"Asexual Arm Socks", // Grey
+		"Nonbinary Arm Socks", // White
+		"Pansexual Arm Socks", // Red
+		"Lesbian Arm Socks", // Orange
+		"Demigender Arm Socks", // Yellow
+		"Bisexual Arm Socks", // Purple
+		"Trans Arm Socks", // Pink
+		"Therian Arm Socks" // Brown
+	],
 
 	"colorOptions" : [
-		// IRON
-		{ "ffca8a" : "ebe5dd", "e0975c" : "ada798", "a85636" : "676f67", "6f2919" : "4a514a" },
-		// BLACK
-		{ "ffca8a" : "838383", "e0975c" : "555555", "a85636" : "383838", "6f2919" : "151515" },
-		// GREY
-		{ "ffca8a" : "b5b5b5", "e0975c" : "808080", "a85636" : "555555", "6f2919" : "303030" },
-		// WHITE
-		{ "ffca8a" : "e6e6e6", "e0975c" : "b6b6b6", "a85636" : "7b7b7b", "6f2919" : "373737" },
-		// RED
-		{ "ffca8a" : "f4988c", "e0975c" : "d93a3a", "a85636" : "932625", "6f2919" : "601119" },
-		// ORANGE
-		{ "ffca8a" : "ffd495", "e0975c" : "ea9931", "a85636" : "af4e00", "6f2919" : "6e2900" },
-		// YELLOW
-		{ "ffca8a" : "ffffa7", "e0975c" : "e2c344", "a85636" : "a46e06", "6f2919" : "745012" },
-		// GREEN
-		{ "ffca8a" : "b2e89d", "e0975c" : "51bd3b", "a85636" : "247824", "6f2919" : "144216" },
-		// BLUE
-		{ "ffca8a" : "96cbe7", "e0975c" : "5588d4", "a85636" : "344495", "6f2919" : "1a1c51" },
-		// PURPLE
-		{ "ffca8a" : "d29ce7", "e0975c" : "a451c4", "a85636" : "6a2284", "6f2919" : "320c40" },
-		// PINK
-		{ "ffca8a" : "eab3db", "e0975c" : "d35eae", "a85636" : "97276d", "6f2919" : "59163f" },
-		// BROWN
-		{ "ffca8a" : "ccae7c", "e0975c" : "a47844", "a85636" : "754c23", "6f2919" : "472b13" }
+		// Default - Rainbow
+		{
+			"9c0000" : "9c0000", "d10000" : "d10000", "e50000" : "e50000", // red -> red
+			"bf6a00" : "bf6a00", "e27d00" : "e27d00", "ff8d00" : "ff8d00", // orange -> orange
+			"b9ad00" : "b9ad00", "dcce00" : "dcce00", "ffee00" : "ffee00", // yellow -> yellow
+			"065118" : "065118", "086e21" : "086e21", "028121" : "028121", // green -> green
+			"0536a8" : "0536a8", "0642d1" : "0642d1", "004cff" : "004cff", // blue -> blue
+			"470451" : "470451", "5c0668" : "5c0668", "770088" : "770088" // purple -> purple
+		},
+		// BLACK - Agender
+		{
+			"9c0000" : "949494", "d10000" : "a3a3a3", "e50000" : "b9b9b9", // red -> grey
+			"bf6a00" : "d6d6d6", "e27d00" : "f0f0f0", "ff8d00" : "ffffff", // orange -> white
+			"b9ad00" : "94c26b", "dcce00" : "a3d676", "ffee00" : "b8f483", // yellow -> light green
+			"065118" : "d6d6d6", "086e21" : "f0f0f0", "028121" : "ffffff", // green -> white
+			"0536a8" : "949494", "0642d1" : "a3a3a3", "004cff" : "b9b9b9", // blue -> grey
+			"470451" : "0f0f0f", "5c0668" : "191919", "770088" : "1f1f1f" // purple -> black
+		},
+		// GREY - Asexual
+		{
+			"9c0000" : "0f0f0f", "d10000" : "191919", "e50000" : "1f1f1f", // red -> black
+			"bf6a00" : "7a7a7a", "e27d00" : "8a8a8a", "ff8d00" : "a3a3a3", // orange -> grey
+			"b9ad00" : "d6d6d6", "dcce00" : "f0f0f0", "ffee00" : "ffffff", // yellow -> white
+			"065118" : "5c005c", "086e21" : "6b006b", "028121" : "800080", // green -> purple
+			"0536a8" : "d6d6d6", "0642d1" : "f0f0f0", "004cff" : "ffffff", // blue -> white
+			"470451" : "7a7a7a", "5c0668" : "8a8a8a", "770088" : "a3a3a3" // purple -> grey
+		},
+		// WHITE - Nonbinary
+		{
+			"9c0000" : "c7c014", "d10000" : "dbd420", "e50000" : "fcf434", // red -> yellow
+			"bf6a00" : "d6d6d6", "e27d00" : "f0f0f0", "ff8d00" : "ffffff", // orange -> white
+			"b9ad00" : "7835ad", "dcce00" : "8844bd", "ffee00" : "9c59d1", // yellow -> purple
+			"065118" : "0f0f0f", "086e21" : "191919", "028121" : "1f1f1f", // green -> black
+			"0536a8" : "c7c014", "0642d1" : "dbd420", "004cff" : "fcf434", // blue -> yellow
+			"470451" : "d6d6d6", "5c0668" : "f0f0f0", "770088" : "ffffff" // purple -> white
+		},
+		// RED - Pansexual
+		{
+			"9c0000" : "cc0665", "d10000" : "e61479", "e50000" : "ff218c", // red -> magenta
+			"bf6a00" : "cc0665", "e27d00" : "e61479", "ff8d00" : "ff218c", // orange -> magenta
+			"b9ad00" : "c7a800", "dcce00" : "e6c200", "ffee00" : "ffd800", // yellow -> yellow
+			"065118" : "c7a800", "086e21" : "e6c200", "028121" : "ffd800", // green -> yellow
+			"0536a8" : "0c85c7", "0642d1" : "1395db", "004cff" : "21b1ff", // blue -> blue
+			"470451" : "0c85c7", "5c0668" : "1395db", "770088" : "21b1ff" // purple -> blue
+		},
+		// ORANGE - Lesbian
+		{
+			"9c0000" : "ad2400", "d10000" : "bd2700", "e50000" : "d62c00", // red -> orange
+			"bf6a00" : "ad2400", "e27d00" : "bd2700", "ff8d00" : "d62c00", // orange -> orange
+			"b9ad00" : "d16e2d", "dcce00" : "e08041", "ffee00" : "ff9956", // yellow -> light orange
+			"065118" : "d6d6d6", "086e21" : "f0f0f0", "028121" : "ffffff", // green -> white
+			"0536a8" : "a83b7b", "0642d1" : "bd4a8d", "004cff" : "d362a4", // blue -> pink
+			"470451" : "750046", "5c0668" : "8a0052", "770088" : "a40162" // purple -> dark pink
+		},
+		// YELLOW - Demigender
+		{
+			"9c0000" : "575757", "d10000" : "666666", "e50000" : "7f7f7f", // red -> grey
+			"bf6a00" : "999999", "e27d00" : "a3a3a3", "ff8d00" : "999999", // orange -> lightgrey
+			"b9ad00" : "d2d64b", "dcce00" : "e1e656", "ffee00" : "fbff74", // yellow -> yellow
+			"065118" : "d6d6d6", "086e21" : "f0f0f0", "028121" : "ffffff", // green -> white
+			"0536a8" : "d2d64b", "0642d1" : "e1e656", "004cff" : "fbff74", // blue -> yellow
+			"470451" : "999999", "5c0668" : "a3a3a3", "770088" : "999999" // purple -> lightgrey
+		},
+		// GREEN - Aromantic
+		{
+			"9c0000" : "227a27", "d10000" : "2a8a2f", "e50000" : "3ea744", // red -> green
+			"bf6a00" : "227a27", "e27d00" : "2a8a2f", "ff8d00" : "3ea744", // orange -> green
+			"b9ad00" : "7da84c", "dcce00" : "95c262", "ffee00" : "a9d478", // yellow -> lightgreen
+			"065118" : "d6d6d6", "086e21" : "f0f0f0", "028121" : "ffffff", // green -> white
+			"0536a8" : "808080", "0642d1" : "8f8f8f", "004cff" : "aaaaaa", // blue -> grey
+			"470451" : "0f0f0f", "5c0668" : "191919", "770088" : "1f1f1f" // purple -> black
+		},
+		// BLUE - Gay
+		{
+			"9c0000" : "0f664f", "d10000" : "157a5f", "e50000" : "1d8a6d", // red -> dark teal
+			"bf6a00" : "0f664f", "e27d00" : "157a5f", "ff8d00" : "1d8a6d", // orange -> dark teal
+			"b9ad00" : "62ad88", "dcce00" : "79c7a0", "ffee00" : "91dbb6", // yellow -> teal
+			"065118" : "d6d6d6", "086e21" : "f0f0f0", "028121" : "ffffff", // green -> white
+			"0536a8" : "507dad", "0642d1" : "628ebd", "004cff" : "77a5d6", // blue -> light blue
+			"470451" : "2b1652", "5c0668" : "311b5c", "770088" : "402574" // purple -> indigo
+		},
+		// PURPLE - Bisexual
+		{
+			"9c0000" : "a30055", "d10000" : "c20065", "e50000" : "d60270", // red -> magenta
+			"bf6a00" : "a30055", "e27d00" : "c20065", "ff8d00" : "d60270", // orange -> magenta
+			"b9ad00" : "a30055", "dcce00" : "c20065", "ffee00" : "d60270", // yellow -> magenta
+			"065118" : "753171", "086e21" : "8a4085", "028121" : "9b4f96", // green -> purple
+			"0536a8" : "002570", "0642d1" : "002e8a", "004cff" : "0038a8", // blue -> blue
+			"470451" : "002570", "5c0668" : "002e8a", "770088" : "0038a8" // purple -> blue
+		},
+		// PINK - Trans
+		{
+			"9c0000" : "3da1c7", "d10000" : "44b5e0", "e50000" : "5bcefa", // red -> light blue
+			"bf6a00" : "c28490", "e27d00" : "db99a6", "ff8d00" : "f5a9b8", // orange -> pink
+			"b9ad00" : "d6d6d6", "dcce00" : "f0f0f0", "ffee00" : "ffffff", // yellow -> white
+			"065118" : "c28490", "086e21" : "db99a6", "028121" : "f5a9b8", // green -> pink
+			"0536a8" : "3da1c7", "0642d1" : "44b5e0", "004cff" : "5bcefa", // blue -> light blue
+			"470451" : "d6d6d6", "5c0668" : "f0f0f0", "770088" : "ffffff" // purple -> white
+		},
+		// BROWN - Therian
+		{
+			"9c0000" : "9c0000", "d10000" : "d10000", "e50000" : "e50000", // red -> red
+			"bf6a00" : "bf6a00", "e27d00" : "e27d00", "ff8d00" : "ff8d00", // orange -> orange
+			"b9ad00" : "b9ad00", "dcce00" : "dcce00", "ffee00" : "ffee00", // yellow -> yellow
+			"065118" : "065118", "086e21" : "086e21", "028121" : "028121", // green -> green
+			"0536a8" : "0536a8", "0642d1" : "0642d1", "004cff" : "004cff", // blue -> blue
+			"470451" : "470451", "5c0668" : "5c0668", "770088" : "770088" // purple -> purple
+		}
 	]
 }

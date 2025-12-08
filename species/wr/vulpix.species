@@ -73,91 +73,6 @@
 	"ouchNoises" : [ "/sfx/humanoid/humanhurt_male1.ogg", "/sfx/humanoid/humanhurt_female1.ogg" ],
 
 	"skull" : "/humanoid/human/dead.png",
-	"defaultBlueprints" : {
-		"tier1" : [
-
-			// Empty Hands
-			{ "item" : "flaghuman" },
-
-			// Anvil
-			{ "item" : "wr/pokemonTier1Head" },
-			{ "item" : "wr/pokemonTier1Chest" },
-			{ "item" : "wr/pokemonTier1Legs" },
-			{ "item" : "wr/pokemonTier2Head" },
-			{ "item" : "wr/pokemonTier2Chest" },
-			{ "item" : "wr/pokemonTier2Legs" },
-
-			{ "item" : "ironshortsword" },
-			{ "item" : "ironbroadsword" },
-			{ "item" : "tungstenaxe" },
-			{ "item" : "tungstenhammer" },
-			{ "item" : "ironrevolver" },
-			{ "item" : "ironassaultrifle" },
-			{ "item" : "tungstenmagnum" },
-			{ "item" : "tungstenshotgun" },
-
-			// Anvil2
-			{ "item" : "wr/pokemonTier3Head" },
-			{ "item" : "wr/pokemonTier3Chest" },
-			{ "item" : "wr/pokemonTier3Legs" },
-			{ "item" : "wr/pokemonTier4Head" },
-			{ "item" : "wr/pokemonTier4Chest" },
-			{ "item" : "wr/pokemonTier4Legs" },
-
-			{ "item" : "titaniumdagger" },
-			{ "item" : "titaniumspear" },
-			{ "item" : "durasteelbroadsword" },
-			{ "item" : "durasteelshortsword" },
-			{ "item" : "titaniummachinepistol" },
-			{ "item" : "titaniumsniperrifle" },
-			{ "item" : "durasteelrevolver" },
-			{ "item" : "durasteelassaultrifle" },
-
-// Anvil3
-			{ "item" : "humantier5ahead" },
-			{ "item" : "humantier5achest" },
-			{ "item" : "humantier5apants" },
-			{ "item" : "humantier6ahead" },
-			{ "item" : "humantier6achest" },
-			{ "item" : "humantier6apants" },
-
-			{ "item" : "humantier5mhead" },
-			{ "item" : "humantier5mchest" },
-			{ "item" : "humantier5mpants" },
-			{ "item" : "humantier6mhead" },
-			{ "item" : "humantier6mchest" },
-			{ "item" : "humantier6mpants" },
-
-			{ "item" : "humantier5shead" },
-			{ "item" : "humantier5schest" },
-			{ "item" : "humantier5spants" },
-			{ "item" : "humantier6shead" },
-			{ "item" : "humantier6schest" },
-			{ "item" : "humantier6spants" },
-
-			{ "item" : "aegisaltpistol" },
-			{ "item" : "aegisaltbow" },
-			{ "item" : "feroziumwand" },
-			{ "item" : "feroziumstaff" },
-			{ "item" : "violiumshortsword" },
-			{ "item" : "violiumbroadsword" },
-
-// Furniture Table 2
-			{ "item" : "humanstoragelocker" },
-			{ "item" : "humanshipdoor" },
-			{ "item" : "humanshiphatch" },
-
-// Spinning Wheel
-			{ "item" : "conceptchest" },
-			{ "item" : "conceptlegs" },
-			{ "item" : "coolchest" },
-			{ "item" : "coollegs" },
-			{ "item" : "sweatervestchest" },
-			{ "item" : "sweatervestlegs" },
-			{ "item" : "workoutchest" },
-			{ "item" : "workoutlegs" }
-		]
-	},
 	"genders" : [
 		{
 			"name" : "male",
@@ -269,5 +184,91 @@
 		"?replace;910d00=732000;b91000=bd4a29;e21400=de7329;" // hairColor
 	],
 
-	"potionRarity" : "rare"
+	"potionRarity" : "rare",
+
+	"defaultBlueprints" : {
+		"tier1" : [
+
+			// Empty Hands
+			{ "item" : "flaghuman" },
+
+			// Anvil
+			{ "item" : "wr/pokemonTier1Head" },
+			{ "item" : "wr/pokemonTier1Chest" },
+			{ "item" : "wr/pokemonTier1Legs" },
+			{ "item" : "wr/pokemonTier2Head" },
+			{ "item" : "wr/pokemonTier2Chest" },
+			{ "item" : "wr/pokemonTier2Legs" },
+
+			{ "item" : "ironshortsword" },
+			{ "item" : "ironbroadsword" },
+			{ "item" : "tungstenaxe" },
+			{ "item" : "tungstenhammer" },
+			{ "item" : "ironrevolver" },
+			{ "item" : "ironassaultrifle" },
+			{ "item" : "tungstenmagnum" },
+			{ "item" : "tungstenshotgun" },
+
+			// Anvil2
+			{ "item" : "wr/pokemonTier3Head" },
+			{ "item" : "wr/pokemonTier3Chest" },
+			{ "item" : "wr/pokemonTier3Legs" },
+			{ "item" : "wr/pokemonTier4Head" },
+			{ "item" : "wr/pokemonTier4Chest" },
+			{ "item" : "wr/pokemonTier4Legs" },
+
+			{ "item" : "titaniumdagger" },
+			{ "item" : "titaniumspear" },
+			{ "item" : "durasteelbroadsword" },
+			{ "item" : "durasteelshortsword" },
+			{ "item" : "titaniummachinepistol" },
+			{ "item" : "titaniumsniperrifle" },
+			{ "item" : "durasteelrevolver" },
+			{ "item" : "durasteelassaultrifle" },
+
+// Anvil3
+			{ "item" : "humantier5ahead" },
+			{ "item" : "humantier5achest" },
+			{ "item" : "humantier5apants" },
+			{ "item" : "humantier6ahead" },
+			{ "item" : "humantier6achest" },
+			{ "item" : "humantier6apants" },
+
+			{ "item" : "humantier5mhead" },
+			{ "item" : "humantier5mchest" },
+			{ "item" : "humantier5mpants" },
+			{ "item" : "humantier6mhead" },
+			{ "item" : "humantier6mchest" },
+			{ "item" : "humantier6mpants" },
+
+			{ "item" : "humantier5shead" },
+			{ "item" : "humantier5schest" },
+			{ "item" : "humantier5spants" },
+			{ "item" : "humantier6shead" },
+			{ "item" : "humantier6schest" },
+			{ "item" : "humantier6spants" },
+
+			{ "item" : "aegisaltpistol" },
+			{ "item" : "aegisaltbow" },
+			{ "item" : "feroziumwand" },
+			{ "item" : "feroziumstaff" },
+			{ "item" : "violiumshortsword" },
+			{ "item" : "violiumbroadsword" },
+
+// Furniture Table 2
+			{ "item" : "humanstoragelocker" },
+			{ "item" : "humanshipdoor" },
+			{ "item" : "humanshiphatch" },
+
+			// Spinning Wheel
+			{ "item" : "wr/pokemonPrideSocksChest" },
+			{ "item" : "wr/pokemonPrideSocksLegs" },
+			{ "item" : "wr/pokemonSocksChest" },
+			{ "item" : "wr/pokemonSocksLegs" },
+			{ "item" : "wr/pokemonStripedSocksAChest" },
+			{ "item" : "wr/pokemonStripedSocksALegs" },
+			{ "item" : "wr/pokemonStripedSocksBChest" },
+			{ "item" : "wr/pokemonStripedSocksBLegs" }
+		]
+	}
 }

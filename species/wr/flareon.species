@@ -223,15 +223,15 @@
 			{ "item" : "novakidshipdoor" },
 			{ "item" : "novakidshiphatch" },
 
-// Spinning Wheel
-			{ "item" : "conceptchest" },
-			{ "item" : "conceptlegs" },
-			{ "item" : "coolchest" },
-			{ "item" : "coollegs" },
-			{ "item" : "sweatervestchest" },
-			{ "item" : "sweatervestlegs" },
-			{ "item" : "workoutchest" },
-			{ "item" : "workoutlegs" }
+			// Spinning Wheel
+			{ "item" : "wr/pokemonPrideSocksChest" },
+			{ "item" : "wr/pokemonPrideSocksLegs" },
+			{ "item" : "wr/pokemonSocksChest" },
+			{ "item" : "wr/pokemonSocksLegs" },
+			{ "item" : "wr/pokemonStripedSocksAChest" },
+			{ "item" : "wr/pokemonStripedSocksALegs" },
+			{ "item" : "wr/pokemonStripedSocksBChest" },
+			{ "item" : "wr/pokemonStripedSocksBLegs" }
 		]
 	}
 }

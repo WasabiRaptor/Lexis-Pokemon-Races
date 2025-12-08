@@ -229,15 +229,15 @@
 			{ "item" : "wr/nickit_boat_shipdoor" },
 			{ "item" : "wr/nickit_boat_shiphatch" },
 
-		// Spinning Wheel
-			{ "item" : "novakidfancychest" },
-			{ "item" : "novakidfancypants" },
-			{ "item" : "novakidjacket" },
-			{ "item" : "novakidjacketpants" },
-			{ "item" : "novakidsuspenders" },
-			{ "item" : "novakidsuspenderspants" },
-			{ "item" : "novakidwaistcoat" },
-			{ "item" : "novakidblackpants" }
+			// Spinning Wheel
+			{ "item" : "wr/pokemonPrideSocksChest" },
+			{ "item" : "wr/pokemonPrideSocksLegs" },
+			{ "item" : "wr/pokemonSocksChest" },
+			{ "item" : "wr/pokemonSocksLegs" },
+			{ "item" : "wr/pokemonStripedSocksAChest" },
+			{ "item" : "wr/pokemonStripedSocksALegs" },
+			{ "item" : "wr/pokemonStripedSocksBChest" },
+			{ "item" : "wr/pokemonStripedSocksBLegs" }
 		]
 	}
 

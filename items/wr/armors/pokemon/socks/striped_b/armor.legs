@@ -1,36 +1,27 @@
 {
-	"itemName" : "wr/pokemonSocksChest",
+	"itemName" : "wr/pokemonStripedSocksBLegs",
 	"price" : 25,
-	"inventoryIcon" : "icons.png:chest",
+	"inventoryIcon" : "icons.png:pants",
 	"maxStack" : 1,
 	"rarity" : "Common",
-	"category" : "chestarmour",
-	"description" : "Long socks for your forelegs.",
-	"shortdescription" : "Arm Socks",
+	"category" : "legarmour",
+	"description" : "Long socks for your hindlegs.",
+	"shortdescription" : "Striped Leg Socks B",
 	"tooltipKind" : "armor",
 
-	"maleFrames" : {
-		"body" : "",
-		"backSleeve" : "",
-		"frontSleeve" : ""
-	},
-
-	"femaleFrames" : {
-		"body" : "",
-		"backSleeve" : "",
-		"frontSleeve" : ""
-	},
+	"maleFrames" : "",
+	"femaleFrames" : "",
 
 	"humanoidAnimationTags" : {
-		"forelegBackCosmetic<slot>Frameset" : "<directory>legs/forelegBack.png",
-		"forelegBackFlippedCosmetic<slot>Frameset" : "<directory>legs/forelegBack.png",
-		"forelegFrontCosmetic<slot>Frameset" : "<directory>legs/forelegFront.png",
-		"forelegFrontFlippedCosmetic<slot>Frameset" : "<directory>legs/forelegFront.png"
+		"hindlegBackCosmetic<slot>Frameset" : "<directory>legs/hindlegBack.png",
+		"hindlegBackFlippedCosmetic<slot>Frameset" : "<directory>legs/hindlegBack.png",
+		"hindlegFrontCosmetic<slot>Frameset" : "<directory>legs/hindlegFront.png",
+		"hindlegFrontFlippedCosmetic<slot>Frameset" : "<directory>legs/hindlegFront.png"
 	},
 
 	"colorOptions" : [
-		// IRON
-		{ "ffca8a" : "ebe5dd", "e0975c" : "ada798", "a85636" : "676f67", "6f2919" : "4a514a" },
+		// WHITE
+		{ "ffca8a" : "e6e6e6", "e0975c" : "b6b6b6", "a85636" : "7b7b7b", "6f2919" : "373737" },
 		// BLACK
 		{ "ffca8a" : "838383", "e0975c" : "555555", "a85636" : "383838", "6f2919" : "151515" },
 		// GREY
