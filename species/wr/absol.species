@@ -223,7 +223,7 @@
 			{ "item" : "humanshipdoor" },
 			{ "item" : "humanshiphatch" },
 
-// Spinning Wheel
+			// Spinning Wheel
 			{ "item" : "wr/pokemonPrideSocksChest" },
 			{ "item" : "wr/pokemonPrideSocksLegs" },
 			{ "item" : "wr/pokemonSocksChest" },
