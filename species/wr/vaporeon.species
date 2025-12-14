@@ -23,6 +23,17 @@
 	},
 	"effectDirectives" : "?replace;31a6ff=0b8aff;9bd4ffFF=60b3ff;FEFFFF=98ceff;",
 	"nameGen" : [ "/species/humanmalenamegen.config:names", "/species/humanfemalenamegen.config:names" ],
+	"ships" : [
+		"/ships/wr/eon/structures/T0.structure",
+		"/ships/wr/eon/structures/T1.structure",
+		"/ships/wr/eon/structures/T2.structure",
+		"/ships/wr/eon/structures/T3.structure",
+		"/ships/wr/eon/structures/T4.structure",
+		"/ships/wr/eon/structures/T5.structure",
+		"/ships/wr/eon/structures/T6.structure",
+		"/ships/wr/eon/structures/T7.structure",
+		"/ships/wr/eon/structures/T8.structure"
+	],
 
 	"statusEffects" : [ { "stat":"breathProtection", "amount":1} ],
 	"humanoidConfig" : "/humanoid/wr/quadruped/quadruped.config",
