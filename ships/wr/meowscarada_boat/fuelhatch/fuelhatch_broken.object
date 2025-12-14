@@ -3,7 +3,6 @@
   "colonyTags" : ["meowscarada"],
   "printable" : false,
   "rarity" : "Common",
-  "objectType" : "container",
   "description" : "Accepts Liquid Erchius as fuel for the ship's FTL dive. But its broken.",
   "shortdescription" : "FTL Fuel Hatch",
   "lightColor" : [102, 90, 61],
@@ -21,12 +20,6 @@
       "anchors" : [ ]
     }
   ],
-
-  "hasWindowIcon" : false,
-  "recipeGroup" : "fuel",
-  "slotCount" : 6,
-  "autoCloseCooldown" : 3600,
-  "frameCooldown" : 5,
 
   "soundEffect" : "/sfx/objects/tv_static.ogg",
   "soundEffectRangeMultiplier" : 0.5,
