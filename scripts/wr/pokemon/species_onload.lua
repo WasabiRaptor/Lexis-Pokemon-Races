@@ -3,6 +3,7 @@ local races = {
 	"wr/vaporeon",
 	"wr/jolteon",
 	"wr/flareon",
+	"wr/espeon",
 	"wr/absol",
 	"wr/luxio",
 	"wr/nickit",
