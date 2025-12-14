@@ -8,24 +8,19 @@
 
   "backgroundOverlays" : [
     {
-      "image" : "T0.png",
-      "position" : [0, 0],
-      "fullbright" : true
-    },
-    {
-      "image" : "T0.png?multiply=FFFFFF7F",
-      "position" : [0, 0]
+      "image" : "T1-3Background.png",
+      "position" : [4, 0]
     }
   ],
   "foregroundOverlays" : [
     {
-      "image" : "T0Walls.png",
-      "position" : [0, 0],
+      "image" : "T1.png",
+      "position" : [4, 0],
       "fullbright" : true
     },
     {
-      "image" : "T0Walls.png?multiply=FFFFFF7F",
-      "position" : [0, 0]
+      "image" : "T1Lit.png",
+      "position" : [4, 0]
     }
   ],
 

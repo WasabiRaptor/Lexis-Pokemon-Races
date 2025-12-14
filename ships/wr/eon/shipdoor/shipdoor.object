@@ -1,13 +1,13 @@
 {
   "objectName" : "wr/eon_shipdoor",
-  "colonyTags" : ["meowscarada","door"],
+  "colonyTags" : ["wr/eon","door"],
   "rarity" : "Common",
 
   "category" : "door",
   "price" : 125,
   "description" : "A door suitable for a spaceship.",
   "shortdescription" : "Space Sloop Door",
-  "race" : "meowscarada",
+  "race" : "wr/eon",
 
   "inventoryIcon" : "shipdooricon.png",
   "orientations" : [

@@ -1,6 +1,6 @@
 {
   "objectName" : "wr/eon_shiplocker",
-  "colonyTags" : ["meowscarada","storage"],
+  "colonyTags" : ["wr/eon","storage"],
   "printable" : false,
   "rarity" : "Common",
   "objectType" : "container",
@@ -9,7 +9,7 @@
   "category" : "storage",
   "description" : "A locker. Store some stuff, why don't you?",
   "shortdescription" : "Shiplocker",
-  "race" : "meowscarada",
+  "race" : "wr/eon",
   "lightColor" : [102, 90, 61],
 
   "inventoryIcon" : "shiplockericon.png",

@@ -1,18 +1,17 @@
 {
-  "objectName" : "wr/eon_fuelhatch",
+  "objectName" : "wr/eon_fuelhatch_broken",
   "colonyTags" : ["wr/eon"],
   "printable" : false,
   "rarity" : "Common",
   "objectType" : "container",
-  "description" : "Accepts Liquid Erchius as fuel for the ship's FTL dive.",
+  "description" : "Accepts Liquid Erchius as fuel for the ship's FTL dive. But its broken.",
   "shortdescription" : "FTL Fuel Hatch",
-  "race" : "wr/eon",
   "lightColor" : [102, 90, 61],
 
   "inventoryIcon" : "fuelhatchicon.png",
   "orientations" : [
     {
-      "imageLayers" : [ { "image" : "fuelhatch.png:<color>.<frame>", "fullbright" : true }, { "image" : "fuelhatchlit.png" } ],
+      "imageLayers" : [ { "image" : "fuelhatch_broken.png:<color>.<frame>", "fullbright" : true }, { "image" : "fuelhatchlit.png" } ],
 
       "imagePosition" : [-8, -16],
       "frames" : 4,
@@ -26,14 +25,17 @@
   "hasWindowIcon" : false,
   "recipeGroup" : "fuel",
   "slotCount" : 6,
-  "uiConfig" : "/interface/fuel/fuel.config",
   "autoCloseCooldown" : 3600,
   "frameCooldown" : 5,
 
-  "itemTags" : [ "newfuelhatch" ],
+  "soundEffect" : "/sfx/objects/tv_static.ogg",
+  "soundEffectRangeMultiplier" : 0.5,
 
-  "scripts" : ["/stagehands/radiomessage.lua"],
-  "scriptDelta" : 30,
-  "broadcastArea" : [-5, -5, 5, 5],
-  "radioMessage" : "fuel"
+  "animation" : "/objects/noisy/noisy.animation",
+
+  "scripts" : [
+    "/objects/noisy/noisy.lua"
+  ],
+
+  "sounds" : [ "/sfx/interface/clickon_error.ogg" ]
 }

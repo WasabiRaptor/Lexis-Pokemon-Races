@@ -1,6 +1,6 @@
 {
   "objectName" : "wr/eon_captainschair",
-  "colonyTags" : ["meowscarada"],
+  "colonyTags" : ["wr/eon"],
   "itemTags" : ["captainschair"],
   "printable" : false,
   "rarity" : "Common",
@@ -8,7 +8,7 @@
 
   "description" : "The Captain uses this to fly the ship.",
   "shortdescription" : "Space Sloop Helm",
-  "race" : "meowscarada",
+  "race" : "wr/eon",
   "category" : "furniture",
 
   "inventoryIcon" : "captainschairicon.png",

@@ -1,11 +1,11 @@
 {
   "objectName" : "wr/eon_teleporter",
-  "colonyTags" : ["meowscarada"],
+  "colonyTags" : ["wr/eon"],
   "printable" : false,
   "rarity" : "Common",
   "description" : "Trusty teleporter, what would we do without you?",
   "shortdescription" : "Teleporter",
-  "race" : "meowscarada",
+  "race" : "wr/eon",
 
   "category" : "teleporter",
   "lightColor" : [26, 200, 180],
