@@ -25,7 +25,7 @@
   "orientations" : [
     {
       "image" : "smallboosterflame.png:on.1",
-      "imagePosition" : [-15, -17],
+      "imagePosition" : [-23, -17],
       "fullbright" : true,
 
       "collision" : "solid",
@@ -38,7 +38,7 @@
   "animationParts" : {
     "booster" : "smallboosterflame.png"
   },
-  "animationPosition" : [-15, -17],
+  "animationPosition" : [-23, -17],
 
   "soundEffect" : "/sfx/objects/smallboosterflame.ogg",
   "soundEffectRangeMultiplier" : 0.5,

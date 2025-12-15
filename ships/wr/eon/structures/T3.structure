@@ -9,18 +9,18 @@
   "backgroundOverlays" : [
     {
       "image" : "T1-3Background.png",
-      "position" : [4, 0]
+      "position" : [10, 10]
     }
   ],
   "foregroundOverlays" : [
     {
       "image" : "T3.png",
-      "position" : [4, 0],
+      "position" : [10, 10],
       "fullbright" : true
     },
     {
       "image" : "T3Lit.png",
-      "position" : [4, 0]
+      "position" : [10, 10]
     }
   ],
 
