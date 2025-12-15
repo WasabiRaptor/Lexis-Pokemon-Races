@@ -25,7 +25,7 @@
 				},
 				"partStates": {
 					"body": {
-						"idle": { "properties": { "image": "<tailFrameset>:<tailState_state>.stand.<tailState_frame>" } },
+						"idle": { "properties": { "image": "<tailFrameset>:<tailState_state>.<tailState_frame>" } },
 						"walk": { "properties": { "image": "<tailFrameset>:<body_state>.<body_frame>" } },
 						"run": { "properties": { "image": "<tailFrameset>:run.<body_frame>" } },
 						"runbackwards" : "run",
@@ -34,8 +34,8 @@
 						"duck": "idle",
 						"swim": "walk",
 						"swimIdle" : "walk",
-						"sit": { "properties": { "image": "<tailFrameset>:<tailState_state>.sit.<tailState_frame>" } },
-						"lay": { "properties": { "image": "<tailFrameset>:<tailState_state>.lay.<tailState_frame>" } }
+						"sit": "walk",
+						"lay": "walk"
 					},
 					"tailState": {
 					},
