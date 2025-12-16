@@ -5,12 +5,10 @@ local function wrap(index, length, secondary, secondaryLength)
 	if not index then
 		index = math.floor(wrap(secondary, secondaryLength * length) / secondaryLength)
 	end
-	index = math.abs(index)
-	if index < length then return index end
-	return math.fmod(index, length)
+	return math.abs(index) % length
 end
-function create(name, species, genderIndex, primaryColor, earFinnColor, bellyColor, dorsalFinnColor, hairStyle, maneStyle, maneColor, pantsColor, personality, ...)
-	-- these values are zero indexed!
+function create(name, species, genderIndex, furColor, hairStyle, maneColor, maneStyle, markingsColor, _6, markingsPattern, _8, personality, ...)
+	 -- these values are zero indexed!
 
 	local speciesConfig = root.speciesConfig(species)
 	local humanoidConfig = sb.jsonMerge(root.assetJson(speciesConfig.humanoidConfig or "/humanoid.config"), speciesConfig.humanoidOverrides or {})
@@ -19,24 +17,26 @@ function create(name, species, genderIndex, primaryColor, earFinnColor, bellyCol
 	genderIndex = wrap(genderIndex, #speciesConfig.genders)
 	local gender = speciesConfig.genders[genderIndex + 1]
 
-	primaryColor = wrap(primaryColor, #speciesConfig.bodyColor)
-	maneColor = wrap(maneColor, #speciesConfig.neckFinnColor)
-	hairStyle = wrap(hairStyle, #speciesConfig.hairStyle)
-	bellyColor = wrap(bellyColor, #speciesConfig.bellyColor)
-	dorsalFinnColor = wrap(dorsalFinnColor, #speciesConfig.dorsalFinnColor)
-	earFinnColor = wrap(earFinnColor, #speciesConfig.earFinnColor)
+	markingsColor = wrap(markingsColor, #speciesConfig.markingsColor)
 
+	furColor = wrap(furColor, #speciesConfig.furColor)
+	maneColor = wrap(maneColor, #speciesConfig.maneColor)
+	bellyColor = wrap(markingsPattern, #speciesConfig.bellyColor)
+
+
+	hairStyle = wrap(hairStyle, #speciesConfig.hairStyle)
 	maneStyle = wrap(maneStyle, #speciesConfig.maneStyle)
+
 
 	personality = wrap(personality, #humanoidConfig.personalities)
 
 	local directives = ""
 
-	directives = directives .. (speciesConfig.neckFinnColor[maneColor + 1])
-	directives = directives .. (speciesConfig.earFinnColor[earFinnColor + 1])
 	directives = directives .. (speciesConfig.bellyColor[bellyColor + 1])
-	directives = directives .. (speciesConfig.bodyColor[primaryColor + 1])
-	directives = directives .. (speciesConfig.dorsalFinnColor[dorsalFinnColor + 1])
+
+	directives = directives .. (speciesConfig.furColor[furColor + 1])
+	directives = directives .. (speciesConfig.maneColor[maneColor + 1])
+	directives = directives .. (speciesConfig.markingsColor[markingsColor + 1])
 
 
 	local personalityIdle, personalityArmIdle, personalityHeadOffset, personalityArmOffset = table.unpack(humanoidConfig.personalities[personality+1])
@@ -63,7 +63,7 @@ function create(name, species, genderIndex, primaryColor, earFinnColor, bellyCol
 		color = {51, 117, 237, 255},
 	}
 	local parameters = {
-		choices = { genderIndex, primaryColor, earFinnColor, bellyColor, dorsalFinnColor, hairStyle, maneStyle, maneColor, pantsColor, personality, ... },
+		choices = { genderIndex, furColor, hairStyle, maneColor, maneStyle, markingsColor, _6, markingsPattern, _8, personality, ... },
 		--this you can do a lot with, see the humanoid build script
 	}
 	local armor = {
