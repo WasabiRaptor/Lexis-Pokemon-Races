@@ -5,12 +5,10 @@ local function wrap(index, length, secondary, secondaryLength)
 	if not index then
 		index = math.floor(wrap(secondary, secondaryLength * length) / secondaryLength)
 	end
-	index = math.abs(index)
-	if index < length then return index end
-	return math.fmod(index, length)
+	return math.abs(index) % length
 end
-function create(name, species, genderIndex, furColor, fluffColor, bellyColor, heady, hairStyle, maneStyle, pantsChoice, pantsColor, personality, ...)
-	-- these values are zero indexed!
+function create(name, species, genderIndex, furColor, hairStyle, maneColor, maneStyle, markingsColor, _6, markingsPattern, _8, personality, ...)
+	 -- these values are zero indexed!
 
 	local speciesConfig = root.speciesConfig(species)
 	local humanoidConfig = sb.jsonMerge(root.assetJson(speciesConfig.humanoidConfig or "/humanoid.config"), speciesConfig.humanoidOverrides or {})
@@ -19,19 +17,25 @@ function create(name, species, genderIndex, furColor, fluffColor, bellyColor, he
 	genderIndex = wrap(genderIndex, #speciesConfig.genders)
 	local gender = speciesConfig.genders[genderIndex + 1]
 
+	markingsColor = wrap(markingsColor, #speciesConfig.markingsColor)
 	furColor = wrap(furColor, #speciesConfig.furColor)
-	fluffColor = wrap(fluffColor, #speciesConfig.fluffColor)
-	bellyColor = wrap(bellyColor, #speciesConfig.bellyColor)
-	maneStyle = wrap(maneStyle, #speciesConfig.maneStyle)
+	maneColor = wrap(maneColor, #speciesConfig.maneColor)
+	bellyColor = wrap(markingsPattern, #speciesConfig.bellyColor)
+
+
 	hairStyle = wrap(hairStyle, #speciesConfig.hairStyle)
+	maneStyle = wrap(maneStyle, #speciesConfig.maneStyle)
+
 
 	personality = wrap(personality, #humanoidConfig.personalities)
 
 	local directives = ""
 
 	directives = directives .. (speciesConfig.bellyColor[bellyColor + 1])
+
 	directives = directives .. (speciesConfig.furColor[furColor + 1])
-	directives = directives .. (speciesConfig.fluffColor[fluffColor + 1])
+	directives = directives .. (speciesConfig.maneColor[maneColor + 1])
+	directives = directives .. (speciesConfig.markingsColor[markingsColor + 1])
 
 
 	local personalityIdle, personalityArmIdle, personalityHeadOffset, personalityArmOffset = table.unpack(humanoidConfig.personalities[personality+1])
@@ -58,7 +62,7 @@ function create(name, species, genderIndex, furColor, fluffColor, bellyColor, he
 		color = {51, 117, 237, 255},
 	}
 	local parameters = {
-		choices = { genderIndex, furColor, fluffColor, bellyColor, heady, hairStyle, maneStyle, pantsChoice, pantsColor, personality, ... },
+		choices = { genderIndex, furColor, hairStyle, maneColor, maneStyle, markingsColor, _6, markingsPattern, _8, personality, ... },
 		--this you can do a lot with, see the humanoid build script
 	}
 	local armor = {
