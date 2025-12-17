@@ -19,6 +19,8 @@
 		"/ships/wr/eon/structures/T8.structure"
 	],
 
+	"tenantData" : {"colonyTagCriteria":{}},
+
 	"nameGen" : [ "/species/humanmalenamegen.config:names", "/species/humanfemalenamegen.config:names" ],
 
 	"statusEffects" : [ { "stat":"breathProtection", "amount":1} ],

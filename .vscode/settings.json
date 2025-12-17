@@ -52,6 +52,7 @@
         "tenant",
         "Item",
         "assets",
-        "uninit"
+        "uninit",
+        "jarray"
     ]
 }

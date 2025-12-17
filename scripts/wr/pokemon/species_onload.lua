@@ -21,6 +21,19 @@ local quests_patch = {}
 local aiConfig = assets.json("/ai/ai.config")
 local universeServerConfig = assets.json("/universe_server.config")
 local radioMessagePatches = {}
+
+local baseTenant = assets.json("/tenants/villager_random.tenant")
+local baseGuardTenant = assets.json("/tenants/guards/guard_random.tenant")
+local baseMerchantTenant = assets.json("/tenants/merchant_random.tenant")
+local baseChefTenant = assets.json("/tenants/chef_random.tenant")
+local randomTenantPatch = jarray()
+local randomGuardTenantPatch = jarray()
+local randomMerchantTenantPatch = jarray()
+local randomChefTenantPatch = jarray()
+local randomTieredGuardTenantPatches = jarray()
+for i = 2, 10 do
+	randomTieredGuardTenantPatches[i] = jarray()
+end
 for _, species in ipairs(races) do
 	local speciesConfig = assets.json("/species/" .. species .. ".species")
 	if speciesConfig.charCreationPatch ~= false then
@@ -214,6 +227,61 @@ for _, species in ipairs(races) do
 			assets.image("/interface/scripted/techupgrade/suits/wr/template-male-legs.png"))
 	end
 
+
+	if speciesConfig.tenantData then
+		assets.add("/tenants/villager_" .. species .. ".tenant", sb.printJson(sb.jsonMerge(baseTenant, {
+			priority = (baseTenant.priority + 1),
+			name = "villager_".. species ,
+			colonyTagCriteria = speciesConfig.tenantData.colonyTagCriteria,
+			tenants = {
+				sb.jsonMerge(baseTenant.tenants[1], {species = species}, speciesConfig.tenantData.tenant or {})
+			},
+		})))
+		table.insert(randomTenantPatch, {op = "add", path = "/tenants/0/species/-", value = species})
+
+		assets.add("/tenants/chef_" .. species .. ".tenant", sb.printJson(sb.jsonMerge(baseChefTenant, {
+			priority = (baseChefTenant.priority + 1),
+			name = "chef_".. species ,
+			colonyTagCriteria = speciesConfig.tenantData.colonyTagCriteria,
+			tenants = {
+				sb.jsonMerge(baseChefTenant.tenants[1], {species = species}, speciesConfig.tenantData.chefTenant or {})
+			},
+		})))
+		table.insert(randomChefTenantPatch, {op = "add", path = "/tenants/0/species/-", value = species})
+
+		assets.add("/tenants/merchant_" .. species .. ".tenant", sb.printJson(sb.jsonMerge(baseMerchantTenant, {
+			priority = (baseMerchantTenant.priority + 1),
+			name = "merchant_".. species ,
+			colonyTagCriteria = speciesConfig.tenantData.colonyTagCriteria,
+			tenants = {
+				sb.jsonMerge(baseMerchantTenant.tenants[1], {species = species}, speciesConfig.tenantData.merchantTenant or {})
+			},
+		})))
+		table.insert(randomMerchantTenantPatch, {op = "add", path = "/tenants/0/species/-", value = species})
+
+
+		assets.add("/tenants/guards/guard_" .. species ..".tenant", sb.printJson(sb.jsonMerge(baseGuardTenant, {
+			priority = (baseGuardTenant.priority + 1),
+			name = "guard_" .. species,
+			colonyTagCriteria = speciesConfig.tenantData.colonyTagCriteria,
+			tenants = {
+				sb.jsonMerge(baseGuardTenant.tenants[1], {species = species}, speciesConfig.tenantData.guardTenant or {})
+			},
+		})))
+		table.insert(randomGuardTenantPatch, { op = "add", path = "/tenants/0/species/-", value = species })
+
+		for i = 2, 10 do
+			assets.add("/tenants/guards/guard_" .. species .. "T".. i .. ".tenant", sb.printJson(sb.jsonMerge(baseGuardTenant, {
+				priority = (baseGuardTenant.priority + 1 + (2*(i-1))),
+				name = "guardT"..i.."_" .. species,
+				colonyTagCriteria = sb.jsonMerge({["tier"..i] = 12}, speciesConfig.tenantData.colonyTagCriteria),
+				tenants = {
+					sb.jsonMerge(baseGuardTenant.tenants[1], {level = i, species = species}, speciesConfig.tenantData.tenant, speciesConfig.tenantData.guardTenant or {})
+				},
+			})))
+			table.insert(randomTieredGuardTenantPatches[i], {op = "add", path = "/tenants/0/species/-", value = species})
+		end
+	end
 	aiConfig = sb.jsonMerge(aiConfig, ai_patch)
 	universeServerConfig = sb.jsonMerge(universeServerConfig, universe_server_patch)
 end
@@ -225,4 +293,12 @@ assets.add("/player.config.patch", sb.printJson(player_patch))
 assets.add("/quests/quests.config.patch", sb.printJson(quests_patch))
 for path, patch in pairs(radioMessagePatches) do
 	assets.add(path..".patch", sb.printJson(patch))
+end
+assets.add("/tenants/villager_random.tenant.patch", sb.printJson(randomTenantPatch))
+assets.add("/tenants/guards/guard_random.tenant.patch", sb.printJson(randomGuardTenantPatch))
+assets.add("/tenants/merchant_random.tenant.patch", sb.printJson(randomMerchantTenantPatch))
+assets.add("/tenants/chef_random.tenant.patch", sb.printJson(randomChefTenantPatch))
+
+for i, patch in pairs(randomTieredGuardTenantPatches) do
+	assets.add("/tenants/guards/guard_randomT" .. i .. ".tenant.patch",  sb.printJson(patch))
 end
