@@ -102,19 +102,29 @@
 		""
 	],
 	"primaryColor": [
-		"?replace;000000=000000;161c33=161c33;293049=293049;414151=414151;" // black (default)
+		"?replace;000000=000000;161c33=161c33;293049=293049;414151=414151;", // dark bluish grey (default)
+		"?replace;000000=000000;161c33=111214;293049=242527;414151=303133;", // black (anime)
+		"?replace;000000=000000;161c33=161007;293049=1a150d;414151=251f16;", // sandy black
+		"?replace;000000=000000;161c33=0b0d2c;293049=121336;414151=1a1c41;", // bluish black
+		"?replace;000000=000000;161c33=160602;293049=1c0d0a;414151=251614;" // redish black
 	],
 	"secondaryColor": [
-		"?replace;685b00=685b00FE;b39532=b39532FE;edd75c=edd75cFE;" // yellow (default)
+		"?replace;685b00=685b00FE;b39532=b39532FE;edd75c=edd75cFE;", // yellow (default)
+		"?replace;685b00=c57300FE;b39532=d68700FE;edd75c=ffc500FE;", // amber yellow (shiny eyes)
+		"?replace;685b00=99262fFE;b39532=ad424aFE;edd75c=d6535dFE;", // red (eyes)
+		"?replace;685b00=0d15c2FE;b39532=272fdaFE;edd75c=525affFE;", // blue (gen2 shiny)
+		"?replace;685b00=295a8cFE;b39532=4a8cb5FE;edd75c=6bbddeFE;" // light blue (shiny)
 	],
 	"markingsColor": [
 		"?replace;afb3cd=161c33;c8cbdf=293049;eef0ff=414151;" // match body
 	],
 	"eyeColor" : [
-		"?replace;692010=692010FE;aa4049=aa4049FE;170602=170602FE;230a04=230a04FE"
+		"?replace;692010=692010FE;aa4049=aa4049FE;170602=170602FE;230a04=230a04FE", // red (default)
+		"?replace;692010=0d15c2FE;aa4049=272fdaFE;170602=00011fFE;230a04=00022eFE", // blue (gen2 shiny)
+		"?replace;692010=c57300FE;aa4049=ffc500FE;170602=140b00FE;230a04=1f1200FE" // yellow (shiny)
 	],
 	"bellyColor": [
-		"?replace;c4afcd=161c33;dac8df=293049;fbeeff=fee05d;", // match body (default)
+		"?replace;c4afcd=161c33;dac8df=293049;fbeeff=414151;", // match body (default)
 		"?replace;c4afcd=afb3cd;dac8df=c8cbdf;fbeeff=eef0ff;" // match markings
 	],
 	"hairColor" : [
