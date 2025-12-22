@@ -109,12 +109,10 @@
 		"Personality" // personality
 	],
 	"maneStyle": [
-		"0",
-		""
+		"0"
 	],
 	"hairStyle": [
-		"0",
-		""
+		"0"
 	],
 	"primaryColor": [
 		"?replace;5a4b15=5a4b15;ab8c3f=ab8c3f;ccad50=ccad50;fee05d=fee05d;" // yellow (default)

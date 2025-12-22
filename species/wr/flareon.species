@@ -129,12 +129,10 @@
 		"flesh" : ["311d1b", "3f2825", "49312e"]
 	},
 	"maneStyle" : [
-		"0",
-		""
+		"0"
 	],
 	"hairStyle" : [
-		"0",
-		""
+		"0"
 	],
 	// These are the tables for the replace colors, if your sprites neeed to have their colors replaced, you should probably define those colors here
 	"primaryColor": [
