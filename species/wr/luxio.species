@@ -46,6 +46,13 @@
 	"createScripts" : ["/species/wr/luxio.lua"],
 
 	"humanoidOverrides" : {
+		"identityFramesetTags" : {
+			"hindlegFrontFrameset" : "legs/<gender>HindlegFront.png",
+			"hindlegBackFrameset" : "legs/<gender>HindlegBack.png",
+
+			"hindlegFrontFlippedFrameset" : "legs/<gender>HindlegFront.png",
+			"hindlegBackFlippedFrameset" : "legs/<gender>HindlegBack.png"
+		},
 		"particleEmitters": {
 			"deathPoof" : {
 				"particles" : [
