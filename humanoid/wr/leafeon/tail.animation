@@ -1,6 +1,6 @@
 {
 	"globalTagDefaults" : {
-		"tailFrameset" : "tail.png"
+		"tailFrameset" : "tail/0.png"
 	},
 	"animatedParts" : {
 		"stateTypes" : {

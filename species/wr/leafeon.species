@@ -30,8 +30,21 @@
 	"statusEffects" : [ { "stat":"breathProtection", "amount":1} ],
 	"humanoidConfig" : "/humanoid/wr/quadruped/quadruped.config",
 	"buildScripts" : ["/humanoid/opensb/build.lua","/humanoid/wr/build_pokemon.lua"],
-	"createScripts" : ["/species/wr/eon.lua"],
+	"createScripts" : ["/species/wr/leafeon.lua"],
 	"humanoidOverrides" : {
+		"identityFramesetTags" : {
+			"tailFrameset" : "tail/<leafType>.png",
+			"emoteFrontFrameset" : "emote/<leafType>_front.png",
+			"emoteBackFrameset" : "emote/<leafType>_back.png",
+
+			"tailFlippedFrameset" : "tail/<leafType>.png",
+			"emoteFrontFlippedFrameset" : "emote/<leafType>_front.png",
+			"emoteBackFlippedFrameset" : "emote/<leafType>_back.png"
+		},
+		"identityTags" : {
+			"leafType" : "0"
+		},
+
 		"particleEmitters": {
 			"deathPoof" : {
 				"particles" : [
@@ -74,7 +87,7 @@
 	],
 	"baseColorPalette" : {
 		"primary" : ["9e7f53", "c7a46c", "edd69f"], // main body // 625242 for nose
-		"secondary" : ["33625a", "369d75", "6dbe8d"], // leaves // 929292 for darkest
+		"secondary" : ["33625a", "369d75", "6dbe8d"], // leaves
 		"tertiary" : ["44311c","6d4d28","a07344"], // paws / markings
 		"belly" : ["c4afcd", "dac8df", "fbeeff"],
 
@@ -95,19 +108,25 @@
 		"Leafeon", // species
 		"Personality" // personality
 	],
-	"facialHairGroup" : "leaf",
 	"leafStyle": [
+		"0"
+	],
+	"hairStyle": [
 		"0",
 		"1"
 	],
-	"hairStyle": [
-		""
-	],
 	"primaryColor": [
-		"?replace;625242=625242;9e7f53=9e7f53;c7a46c=c7a46c;edd69f=edd69f;" // cream (default)
+		"?replace;625242=625242;9e7f53=9e7f53;c7a46c=c7a46c;edd69f=edd69f;", // cream (default)
+		"?replace;625242=6f4a1f;9e7f53=c68e50;c7a46c=e7ae6f;edd69f=f7d694;" // brighter cream (shiny)
 	],
 	"secondaryColor": [
-		"?replace;929292=929292;33625a=33625a;369d75=369d75;6dbe8d=6dbe8d;" // green (default)
+		"?replace;33625a=33625a;369d75=369d75;6dbe8d=6dbe8d;", // green (default)
+		"?replace;33625a=487635;369d75=7db167;6dbe8d=a6d493;", // pale green (anime)
+		"?replace;33625a=08946b;369d75=19c573;6dbe8d=5ae684;", // bright green (shiny)
+		"?replace;33625a=0c6f48;369d75=149260;6dbe8d=18a66e;", // pine green
+		"?replace;33625a=a15f0e;369d75=d88e22;6dbe8d=f4b637;", // autumn yellow
+		"?replace;33625a=94500d;369d75=c27324;6dbe8d=f49537;", // autumn orange
+		"?replace;33625a=9f250e;369d75=cb3e24;6dbe8d=f45537;" // autumn red
 	],
 	"markingsColor": [
 		"?replace;44311c=44311c;6d4d28=6d4d28;a07344=a07344;" // brown
