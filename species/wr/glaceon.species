@@ -1,0 +1,220 @@
+{
+	"kind" : "wr/glaceon",
+
+	"fallbackShip" : "apex",
+	"charCreationTooltip" : {
+		"title" : "Glaceon",
+		"subTitle" : "",
+		"description" : "Have you ever licked a metal pole in the snow?"
+	},
+	"ships" : [
+		"/ships/wr/eon/structures/T0.structure",
+		"/ships/wr/eon/structures/T1.structure",
+		"/ships/wr/eon/structures/T2.structure",
+		"/ships/wr/eon/structures/T3.structure",
+		"/ships/wr/eon/structures/T4.structure",
+		"/ships/wr/eon/structures/T5.structure",
+		"/ships/wr/eon/structures/T6.structure",
+		"/ships/wr/eon/structures/T7.structure",
+		"/ships/wr/eon/structures/T8.structure"
+	],
+	"tenantData" : {
+		"colonyTagCriteria":{
+			"nature" : 8,
+			"giantflower" : 8
+		}
+	},
+
+	"nameGen" : [ "/species/humanmalenamegen.config:names", "/species/humanfemalenamegen.config:names" ],
+
+	"statusEffects" : [ { "stat":"breathProtection", "amount":1} ],
+	"humanoidConfig" : "/humanoid/wr/quadruped/quadruped.config",
+	"buildScripts" : ["/humanoid/opensb/build.lua","/humanoid/wr/build_pokemon.lua"],
+	"createScripts" : ["/species/wr/glaceon.lua"],
+	"humanoidOverrides" : {
+		"particleEmitters": {
+			"deathPoof" : {
+				"particles" : [
+					{
+						"particle" : {
+							"type" : "animated",
+							"animation" : "/animations/wr/pokemon/playerdeath/quadruped/playerdeath.animation",
+							"size" : 1,
+							"angularVelocity" : 0,
+							"fade" : 1,
+							"destructionTime" : 1,
+							"position" : [0, 0],
+							"initialVelocity" : [0, 0],
+							"finalVelocity" : [0, 0],
+							"approach" : [1, 1],
+							"timeToLive" : 1.0,
+							"layer" : "middle"
+						}
+					}
+				]
+			}
+		}
+	},
+	"ouchNoises" : [ "/sfx/humanoid/humanhurt_male1.ogg", "/sfx/humanoid/humanhurt_female1.ogg" ],
+
+
+	"skull" : "/humanoid/human/dead.png",
+	"effectDirectives" : "?replace;FEFFFFFF=FFFFFFFF;9bd4ffFF=80b3ffFF;31a6ffFF=5476f0FF",
+	"genders" : [
+		{
+			"name" : "male",
+			"image" : "/interface/title/male.png",
+			"characterImage" : "/humanoid/wr/glaceon/icon.png"
+		},
+		{
+			"name" : "female",
+			"image" : "/interface/title/female.png",
+			"characterImage" : "/humanoid/wr/glaceon/icon.png"
+		}
+	],
+	"baseColorPalette" : {
+		"primary" : ["9e7f53", "c7a46c", "edd69f"], // main body // 625242 for nose
+		"secondary" : ["33625a", "369d75", "6dbe8d"], // leaves
+		"tertiary" : ["44311c","6d4d28","a07344"], // paws / markings
+		"belly" : ["c4afcd", "dac8df", "fbeeff"],
+
+		"flesh" : ["7a235a", "99457a", "a2668c"],
+		"nose" : ["625242"]
+	},
+	"charGenTextLabels": [
+		"Fur Color", // body color
+		"Leaf Color", // hair type
+		"Markings Color", // shirt
+		"Eye Color", // pants
+
+		"Hair Style", // alt option - undy color - facial mask
+		"Leaf Style", // head option - hair color - facial hair
+		"Color Pattern", // shirt color
+		"-", // pants color
+
+		"Glaceon", // species
+		"Personality" // personality
+	],
+	"leafStyle": [
+		"0"
+	],
+	"hairStyle": [
+		"0",
+		"1"
+	],
+	"primaryColor": [
+		"?replace;625242=625242;9e7f53=9e7f53;c7a46c=c7a46c;edd69f=edd69f;", // cream (default)
+		"?replace;625242=6f4a1f;9e7f53=c68e50;c7a46c=e7ae6f;edd69f=f7d694;" // brighter cream (shiny)
+	],
+	"secondaryColor": [
+		"?replace;33625a=33625a;369d75=369d75;6dbe8d=6dbe8d;", // green (default)
+		"?replace;33625a=487635;369d75=7db167;6dbe8d=a6d493;", // pale green (anime)
+		"?replace;33625a=08946b;369d75=19c573;6dbe8d=5ae684;", // bright green (shiny)
+		"?replace;33625a=0c6f48;369d75=149260;6dbe8d=18a66e;", // pine green
+		"?replace;33625a=a15f0e;369d75=d88e22;6dbe8d=f4b637;", // autumn yellow
+		"?replace;33625a=94500d;369d75=c27324;6dbe8d=f49537;", // autumn orange
+		"?replace;33625a=9f250e;369d75=cb3e24;6dbe8d=f45537;" // autumn red
+	],
+	"markingsColor": [
+		"?replace;44311c=44311c;6d4d28=6d4d28;a07344=a07344;" // brown
+	],
+	"eyeColor" : [
+		""
+	],
+	"bellyColor": [
+		"?replace;c4afcd=9e7f53;dac8df=c7a46c;fbeeff=edd69f;", // match body (default)
+		"?replace;c4afcd=44311c;dac8df=6d4d28;fbeeff=a07344;" // match markings
+	],
+	"hairColor" : [
+		""
+	],
+
+
+	"defaultBlueprints" : {
+		"tier1" : [
+
+			// Empty Hands
+			{ "item" : "flaghuman" },
+
+			// Anvil
+			{ "item" : "wr/tier1Head" },
+			{ "item" : "wr/tier1Chest" },
+			{ "item" : "wr/tier1Legs" },
+			{ "item" : "wr/tier2Head" },
+			{ "item" : "wr/tier2Chest" },
+			{ "item" : "wr/tier2Legs" },
+
+			{ "item" : "ironshortsword" },
+			{ "item" : "ironbroadsword" },
+			{ "item" : "tungstenaxe" },
+			{ "item" : "tungstenhammer" },
+			{ "item" : "ironrevolver" },
+			{ "item" : "ironassaultrifle" },
+			{ "item" : "tungstenmagnum" },
+			{ "item" : "tungstenshotgun" },
+
+			// Anvil2
+			{ "item" : "wr/tier3Head" },
+			{ "item" : "wr/tier3Chest" },
+			{ "item" : "wr/tier3Legs" },
+			{ "item" : "wr/tier4Head" },
+			{ "item" : "wr/tier4Chest" },
+			{ "item" : "wr/tier4Legs" },
+
+			{ "item" : "titaniumdagger" },
+			{ "item" : "titaniumspear" },
+			{ "item" : "durasteelbroadsword" },
+			{ "item" : "durasteelshortsword" },
+			{ "item" : "titaniummachinepistol" },
+			{ "item" : "titaniumsniperrifle" },
+			{ "item" : "durasteelrevolver" },
+			{ "item" : "durasteelassaultrifle" },
+
+// Anvil3
+			{ "item" : "humantier5ahead" },
+			{ "item" : "humantier5achest" },
+			{ "item" : "humantier5apants" },
+			{ "item" : "humantier6ahead" },
+			{ "item" : "humantier6achest" },
+			{ "item" : "humantier6apants" },
+
+			{ "item" : "humantier5mhead" },
+			{ "item" : "humantier5mchest" },
+			{ "item" : "humantier5mpants" },
+			{ "item" : "humantier6mhead" },
+			{ "item" : "humantier6mchest" },
+			{ "item" : "humantier6mpants" },
+
+			{ "item" : "humantier5shead" },
+			{ "item" : "humantier5schest" },
+			{ "item" : "humantier5spants" },
+			{ "item" : "humantier6shead" },
+			{ "item" : "humantier6schest" },
+			{ "item" : "humantier6spants" },
+
+			{ "item" : "aegisaltpistol" },
+			{ "item" : "aegisaltbow" },
+			{ "item" : "feroziumwand" },
+			{ "item" : "feroziumstaff" },
+			{ "item" : "violiumshortsword" },
+			{ "item" : "violiumbroadsword" },
+
+// Furniture Table 2
+			{ "item" : "novakidstoragelocker" },
+			{ "item" : "novakidshipdoor" },
+			{ "item" : "novakidshiphatch" },
+
+			// Spinning Wheel
+			{ "item" : "wr/prideSocksChest" },
+			{ "item" : "wr/prideSocksLegs" },
+			{ "item" : "wr/socksChest" },
+			{ "item" : "wr/socksLegs" },
+			{ "item" : "wr/stripedSocksAChest" },
+			{ "item" : "wr/stripedSocksALegs" },
+			{ "item" : "wr/stripedSocksBChest" },
+			{ "item" : "wr/stripedSocksBLegs" },
+			{ "item" : "wr/stripedSocksCChest" },
+			{ "item" : "wr/stripedSocksCLegs" }
+		]
+	}
+}
