@@ -29,10 +29,10 @@
 		"/ships/wr/eon/structures/T2.structure",
 		"/ships/wr/eon/structures/T3.structure",
 		"/ships/wr/eon/structures/T4.structure",
-		"/ships/wr/eon/structures/T5.structure",
-		"/ships/wr/eon/structures/T6.structure",
-		"/ships/wr/eon/structures/T7.structure",
-		"/ships/wr/eon/structures/T8.structure"
+		"/ships/wr/eon/structures/T4.structure", // "/ships/wr/eon/structures/T5.structure",
+		"/ships/wr/eon/structures/T4.structure", // "/ships/wr/eon/structures/T6.structure",
+		"/ships/wr/eon/structures/T4.structure", // "/ships/wr/eon/structures/T7.structure",
+		"/ships/wr/eon/structures/T4.structure" // "/ships/wr/eon/structures/T8.structure"
 	],
 	"tenantData" : {
 		"colonyTagCriteria":{
