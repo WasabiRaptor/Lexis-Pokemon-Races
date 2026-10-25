@@ -8,7 +8,7 @@
   "price" : 70,
   "radioMessagesOnPickup" : [ "pickupflag" ],
 
-  "description" : "The  flag. Use ^green;[E]^white; to bookmark a teleportation location.",
+  "description" : "The Vulpix flag. Use ^green;[E]^white; to bookmark a teleportation location.",
   "shortdescription" : "Vulpix Flag",
   "race" : "vulpix",
 

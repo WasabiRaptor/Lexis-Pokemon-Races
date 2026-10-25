@@ -196,7 +196,7 @@
 		"tier1" : [
 
 			// Empty Hands
-			{ "item" : "flaghuman" },
+			{ "item" : "wr/vulpix_flag" },
 
 			// Anvil
 			{ "item" : "wr/tier1Head" },

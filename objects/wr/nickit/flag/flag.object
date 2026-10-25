@@ -8,7 +8,7 @@
   "price" : 70,
   "radioMessagesOnPickup" : [ "pickupflag" ],
 
-  "description" : "The  flag. Use ^green;[E]^white; to bookmark a teleportation location.",
+  "description" : "The Nickit flag. Use ^green;[E]^white; to bookmark a teleportation location.",
   "shortdescription" : "Nickit Flag",
   "race" : "nickit",
 

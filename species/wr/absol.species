@@ -161,7 +161,7 @@
 		"tier1" : [
 
 			// Empty Hands
-			{ "item" : "flaghuman" },
+			{ "item" : "wr/absol_flag" },
 
 			// Anvil
 			{ "item" : "wr/tier1Head" },

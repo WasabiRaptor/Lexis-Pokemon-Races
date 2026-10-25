@@ -135,7 +135,8 @@
 		"tier1" : [
 
 			// Empty Hands
-			{ "item" : "flaghuman" },
+			{ "item" : "wr/eevee_flag" },
+			{ "item" : "wr/umbreon_flag" },
 
 			// Anvil
 			{ "item" : "wr/tier1Head" },
